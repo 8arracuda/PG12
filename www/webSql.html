@@ -3,6 +3,12 @@
     <a class="btn btn-primary" ng-click="initWebSQL()">init</a>
     <a class="btn btn-primary" ng-click="testWebSQL()">test</a>
     <a class="btn btn-primary" ng-click="deleteWebSQL()">delete</a>
+    <a class="btn btn-primary" ng-click="demo()">demo</a>
+    <a class="btn btn-primary" ng-click="demo2()">demo2</a>
+    <a class="btn btn-primary" ng-click="check()">check</a>
 
-    <p ng-repeat="result in results">{{ result }}</p>
+    <div ng-repeat="row in resultArray">
+        {{ row.id }} - {{ row.created }} - {{ row.log}}
+    </div>
+
 </div>
