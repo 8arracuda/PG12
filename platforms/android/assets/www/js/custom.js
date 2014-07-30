@@ -15,7 +15,7 @@ sdApp.config(function ($routeProvider) {
             templateUrl: 'sessionStorage.html',
             controller: 'SessionStorageCtrl'
         }).
-        when('/indexedDb/', {
+        when('/indexedDB/', {
             templateUrl: 'indexedDB.html',
             controller: 'IndexedDBCtrl'
         }).
@@ -34,9 +34,6 @@ sdApp.config(function ($routeProvider) {
         otherwise({
             redirectTo: '/localStorage'
         });
-
-
-
 
 
 });
