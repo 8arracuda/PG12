@@ -58,6 +58,8 @@ sdApp.controller('WebSqlCtrl', function ($scope) {
 
 
     $scope.gotResults = function (tx, results) {
+
+
         console.log('gotIt start');
 
         var resultArray = [];
@@ -70,11 +72,12 @@ sdApp.controller('WebSqlCtrl', function ($scope) {
                 alert(JSON.stringify(results.rows.item(i)));
             }
         }
-        alert('resultArray length: ' + resultArray.length);
+
         $scope.resultArray = resultArray;
-        alert(JSON.stringify(resultArray));
+
         //triggers AngularJS to reload
         $scope.$apply();
+
         console.log('gotIt executed');
     }
 
@@ -85,5 +88,36 @@ sdApp.controller('WebSqlCtrl', function ($scope) {
         });
 
     };
+
+    $scope.wipeDatabase = function () {
+
+        var answer = confirm('Do you really want to remove all entries from the database -logs-?');
+
+        if (answer) {
+            alert('will delete');
+
+            dbWebSQL.transaction(function (tx) {
+                tx.executeSql("DELETE FROM log", [], $scope.gotResults_Check, $scope.errorHandlerWebSQL);
+            });
+           // $scope.$apply();
+
+
+        } else {
+            alert('will not delete');
+        }
+
+
+    };
+
+    $scope.gotResults_Check = function (tx, results) {
+        console.log('gotResults_Check started');
+        if (results.rows.length == 0) {
+            $scope.databaseIsEmpty = true;
+        } else {
+            $scope.databaseIsEmpty = false;
+        }
+        console.log('gotResults_Check executed');
+
+    }
 
 });

@@ -1,11 +1,15 @@
 <div ng-controller="WebSqlCtrl">
 
+    <div ng-show="databaseIsEmpty==true">database is empty</div>
+    <div ng-show="databaseIsEmpty==false">database is not empty</div>
+
     <a class="btn btn-primary" ng-click="initWebSQL()">init</a>
     <a class="btn btn-primary" ng-click="testWebSQL()">test</a>
     <a class="btn btn-primary" ng-click="deleteWebSQL()">delete</a>
     <a class="btn btn-primary" ng-click="demo()">demo</a>
     <a class="btn btn-primary" ng-click="demo2()">demo2</a>
     <a class="btn btn-primary" ng-click="check()">check</a>
+    <a class="btn btn-primary" ng-click="wipeDatabase()">delete all</a>
 
     <div ng-repeat="row in resultArray">
         {{ row.id }} - {{ row.created }} - {{ row.log}}
