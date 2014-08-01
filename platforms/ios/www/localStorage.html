@@ -77,7 +77,6 @@
 
                     <h3 class="page-header">Edit</h3>
 
-
                     <div class="list-group">
                         <li class="list-group-item">{{ selectedSection.nameLong }}</li>
 
@@ -86,15 +85,30 @@
                             class="list-group-item"
                             href="#{{ section.id }}/{{ section.fileName }}/{{ section.controllerName }}">
 
-                            <b>key:</b> {{ key }}<br>
-                            <input ng-model="lsmodel" type="text" class="topcoat-text-input" value="{{value}}">
+
+                            <div overlay="myOverlay">
+                                <h4 class="overlay-title">key: {{ myOverlayTitle }}</h4>
+
+                                    value:{{ myOverlayText }}
+
+
+                                <p toggle="off" bubble target="myOverlay">
+                                    <span class="btn btn-primary">Ok</span>
+                                    <span class="btn btn-default">Cancel</span>
+                                </p>
+                            </div>
+
+                            <b>key:</b> {{ key }} <a class="btn btn-sm btn-primary" ng-click="showAlert(value)">alert value</a><a class="btn btn-sm btn-primary" ng-click="openOverlay(key,value)">open overlay</a><br>
+                            <input ng-model="value" type="text">
+
+
 
                         </li>
 
                     </div>
 
                     <b>key:</b> test<br>
-                    <input ng-model="lsTest" type="text" class="topcoat-text-input">
+                    <input ng-model="lsTest" type="text">
 
 
                 </div>
@@ -107,15 +121,12 @@
 
                     <h3 class="page-header">Performance Test</h3>
 
-
                     <a ng-click="perf_store100Items()"
                             class="btn btn-primary">store 100</a>
                     <a ng-click="perf_store1000Items()"
                        class="btn btn-primary">store 1000</a>
                     <a ng-click="perf_store10times1000()"
                        class="btn btn-primary">10x store 1000</a>
-
-
 
                     <input ng-model="timeString" type="text"/>
 

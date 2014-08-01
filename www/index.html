@@ -25,8 +25,11 @@
     <meta name="viewport"
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"/>
 
-    <link rel="stylesheet" href="css/mobile-angular-ui-base.css"/>
+    <link rel="stylesheet" href="css/mobile-angular-ui-base.css" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+    <!--weinre-->
+    <script src="http://localhost:8081/target/target-script-min.js"></script>
 
 
     <meta name="msapplication-tap-highlight" content="no"/>
@@ -59,7 +62,6 @@
 <!--end sidebar-->
 
 <div class="app">
-
     <div class="navbar navbar-app navbar-absolute-top">
 
         <div class="navbar-brand navbar-brand-center" yield-to="title">
@@ -74,7 +76,7 @@
 
         <div class="btn-group pull-right" yield-to="navbarAction">
             <div class="btn btn-navbar">
-                <i class="fa fa-plus"></i> New
+                <i class="fa fa-plus"></i> New2
             </div>
         </div>
     </div>
@@ -101,6 +103,7 @@
 <script type="text/javascript" src="js/controller/SessionStorageCtrl.js"></script>
 <script type="text/javascript" src="js/controller/PGmoreCtrl.js"></script>
 <script type="text/javascript" src="js/controller/PGSQLiteCtrl.js"></script>
+
 
 <script type="text/javascript">
     app.initialize();

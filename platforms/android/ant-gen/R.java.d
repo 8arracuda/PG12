@@ -1,4 +1,4 @@
-/users/michael/AB-Code/PG12/platforms/android/ant-gen/de/msteiner/PG10/R.java \
+/users/michael/AB-Code/PG12/platforms/android/ant-gen/de/msteiner/PG12/R.java \
  : /users/michael/AB-Code/PG12/platforms/android/res/drawable/icon.png \
 /users/michael/AB-Code/PG12/platforms/android/res/drawable-hdpi/icon.png \
 /users/michael/AB-Code/PG12/platforms/android/res/drawable-land-hdpi/screen.png \

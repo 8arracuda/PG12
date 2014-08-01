@@ -1,5 +1,11 @@
 <div ng-controller="WebSqlCtrl">
 
+    <div content-for="navbarAction">
+        <div class="btn btn-navbar">
+            <i class="fa fa-plus"></i>WebSQL
+        </div>
+    </div>
+
     <div ng-show="databaseIsEmpty==true">database is empty</div>
     <div ng-show="databaseIsEmpty==false">database is not empty</div>
 
@@ -10,6 +16,14 @@
     <a class="btn btn-primary" ng-click="demo2()">demo2</a>
     <a class="btn btn-primary" ng-click="check()">check</a>
     <a class="btn btn-primary" ng-click="wipeDatabase()">delete all</a>
+
+    <br>
+    <br>
+    <a class="btn btn-primary" ng-click="addRow()">add row</a>
+
+
+    <br>
+    <input ng-model="inputString" type="text">
 
     <div ng-repeat="row in resultArray">
         {{ row.id }} - {{ row.created }} - {{ row.log}}

@@ -6,6 +6,13 @@
 /users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG10/R$string.class \
 /users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG10/R$xml.class \
 /users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG10/R.class \
+/users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG12/BuildConfig.class \
+/users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG12/HelloCordova.class \
+/users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG12/R$attr.class \
+/users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG12/R$drawable.class \
+/users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG12/R$string.class \
+/users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG12/R$xml.class \
+/users/michael/AB-Code/PG12/platforms/android/ant-build/classes/de/msteiner/PG12/R.class \
 /users/michael/AB-Code/PG12/platforms/android/ant-build/classes/io/cordova/hellocordova/BuildConfig.class \
 /users/michael/AB-Code/PG12/platforms/android/ant-build/classes/io/cordova/hellocordova/HelloCordova.class \
 /users/michael/AB-Code/PG12/platforms/android/ant-build/classes/io/cordova/hellocordova/R$attr.class \
