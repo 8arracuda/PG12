@@ -1,5 +1,6 @@
 sdApp.controller('LocalStorageCtrl', function ($scope) {
 
+
     $scope.localStorage = [];
     $scope.localStorage = localStorage;
 

@@ -1,6 +1,5 @@
 sdApp.controller('LocalStorageCtrl', function ($scope) {
 
-    $scope.navbarRightButtonLabel = 'foo';
 
     $scope.localStorage = [];
     $scope.localStorage = localStorage;

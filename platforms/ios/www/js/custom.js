@@ -11,6 +11,10 @@ sdApp.config(function ($routeProvider) {
             templateUrl: 'localStorage.html',
             controller: 'LocalStorageCtrl'
         }).
+        when('/localStorage/list2/:key', {
+            templateUrl: 'localStorage_list2_details.html',
+            controller: 'LocalStorageList2DetailsCtrl'
+        }).
         when('/sessionStorage/', {
             templateUrl: 'sessionStorage.html',
             controller: 'SessionStorageCtrl'
@@ -31,6 +35,7 @@ sdApp.config(function ($routeProvider) {
             templateUrl: 'PG_more.html',
             controller: 'PGMoreCtrl'
         }).
+
         otherwise({
             redirectTo: '/localStorage'
         });
