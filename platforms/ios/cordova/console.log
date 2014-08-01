@@ -145,3 +145,17 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-08-01 13:28:09.963 PG12[3068:70b] Resetting plugins due to page load.
 2014-08-01 13:28:10.330 PG12[3068:70b] Finished load of: file:///Users/michael/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D7951997-5FC0-4E58-8071-9BA494B459AE/PG12.app/www/index.html#/localStorage/
 Terminating in response to SpringBoard's termination.
+objc[3710]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-01 13:38:01.473 PG12[3710:70b] Cannot find executable for CFBundle 0xa535a30 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-01 13:38:01.484 PG12[3710:70b] Cannot find executable for CFBundle 0xa4414f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-01 13:38:01.540 PG12[3710:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-01 13:38:01.549 PG12[3710:70b] Unlimited access to network resources
+2014-08-01 13:38:01.552 PG12[3710:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-01 13:38:01.703 PG12[3710:70b] Resetting plugins due to page load.
+2014-08-01 13:38:01.983 PG12[3710:70b] Finished load of: file:///Users/michael/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/D7951997-5FC0-4E58-8071-9BA494B459AE/PG12.app/www/index.html#/localStorage/
