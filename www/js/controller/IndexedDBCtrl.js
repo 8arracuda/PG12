@@ -118,5 +118,17 @@ sdApp.controller('IndexedDBCtrl', function ($scope) {
     };
 
 
+    $scope.showObjectStores = function() {
+        const dbName = "the_name";
+        var request = window.indexedDB.open(dbName, 3);
+        request.onsuccess = function (event) {
+            console.log('request.onsuccess');
+            db = request.result;
+            //alert(JSON.stringify(db.objectStoreNames));
+            $scope.objectStoreNames = db.objectStoreNames;
+        };
+
+    };
+
 
 });
