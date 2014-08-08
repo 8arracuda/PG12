@@ -1,4 +1,4 @@
-app.initialize();
+//app.initialize();
 
 var sdApp = angular.module('sdApp', ["ngRoute", "mobile-angular-ui"]);
 

@@ -1,5 +1,40 @@
 sdApp.controller('LocalStorageCtrl', function ($scope) {
 
+    $scope.enableTab_Actions = function () {
+        $scope.tab = 1;
+        $scope.stringForTitle = 'LocalStorage - Actions';
+        $scope.stringForRightButton = 'ACT';
+    }
+
+    $scope.enableTab_List = function () {
+        $scope.tab = 2;
+        $scope.stringForTitle = 'LocalStorage - List';
+        $scope.stringForRightButton = 'LST';
+    }
+
+    $scope.enableTab_Edit = function () {
+        $scope.tab = 3;
+        $scope.stringForTitle = 'LocalStorage - Edit';
+        $scope.stringForRightButton = 'EDIT';
+    }
+
+    $scope.enableTab_Perf = function () {
+        $scope.tab = 4;
+        $scope.stringForTitle = 'LocalStorage - Perf';
+        $scope.stringForRightButton = 'PER';
+    }
+
+    $scope.enableTab_Image = function () {
+        $scope.tab = 5;
+        $scope.stringForTitle = 'LocalStorage - Image';
+        $scope.stringForRightButton = 'IMG';
+    }
+
+    $scope.enableTab_List2 = function () {
+        $scope.tab = 6;
+        $scope.stringForTitle = 'LocalStorage - List2';
+        $scope.stringForRightButton = 'LST2';
+    }
 
     $scope.localStorage = [];
     $scope.localStorage = localStorage;
@@ -118,14 +153,14 @@ sdApp.controller('LocalStorageCtrl', function ($scope) {
         ;
     };
 
-
-    $scope.openOverlay = function(title, text) {
+    $scope.openOverlay = function (title, text) {
         $scope.myOverlayTitle = 'key: ' + title;
         $scope.myOverlayText = 'value: ' + text;
         //$scope.myOverlayText = text;
         $scope.toggle('myOverlay', 'on');
     };
 
+    $scope.enableTab_Actions();
 
 
 });
