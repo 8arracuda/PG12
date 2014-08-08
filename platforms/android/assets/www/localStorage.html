@@ -13,39 +13,84 @@
     <div class="scrollable">
         <div class="scrollable-content">
 
-            <ul class="nav nav-tabs">
-                <li ng-class="{active: tab == 1}">
-                    <a ng-click="enableTab_Actions()">Actions</a>
-                </li>
+            <div class="btn-group justified nav-tabs">
+                <a class="btn btn-default"
+                   target="localStorage_actions"
+                   toggle="on"
+                   ng-click="enableTab_Actions()"
+                   active-class="active">Actions
+                </a>
 
-                <li ng-class="{active: tab == 2}">
-                    <a ng-click="enableTab_List()">List</a>
-                </li>
+                <a class="btn btn-default"
+                   target="localStorage_list"
+                   toggle="on"
+                   ng-click="enableTab_List()"
+                   active-class="active">List
+                </a>
 
-                <li ng-class="{active: tab == 3}">
-                    <a ng-click="enableTab_Edit()">Edit</a>
-                </li>
+                <a class="btn btn-default"
+                   target="localStorage_edit"
+                   toggle="on"
+                   ng-click="enableTab_Edit()"
+                   active-class="active">Edit
+                </a>
 
-                <li ng-class="{active: tab == 4}">
-                    <a ng-click="enableTab_Perf()">Perf</a>
-                </li>
+                <a class="btn btn-default"
+                   target="localStorage_perf"
+                   toggle="on"
+                   ng-click="enableTab_Perf()"
+                   active-class="active">Perf
+                </a>
 
-                <li ng-class="{active: tab == 5}">
-                    <a ng-click="enableTab_Image()">Image</a>
-                </li>
+                <a class="btn btn-default"
+                   target="localStorage_image"
+                   toggle="on"
+                   ng-click="enableTab_Image()"
+                   active-class="active">Image
+                </a>
 
-                <li ng-class="{active: tab == 6}">
-                    <a ng-click="enableTab_List2()">List2</a>
-                </li>
-                <!--<li ng-class="{active: tab == 1}"><a ng-click="enableTab_Actions()">Actions</a></li>-->
-                <!--<li ng-class="{active: tab == 2}"><a ng-click="tab = 2">List</a></li>-->
-                <!--<li ng-class="{active: tab == 3}"><a ng-click="tab = 3">Edit</a></li>-->
-                <!--<li ng-class="{active: tab == 4}"><a ng-click="tab = 4">Perf</a></li>-->
-                <!--<li ng-class="{active: tab == 5}"><a ng-click="tab = 5">Image</a></li>-->
-                <!--<li ng-class="{active: tab == 6}"><a ng-click="tab = 6">List2</a></li>-->
+                <a class="btn btn-default"
+                   target="localStorage_list2"
+                   toggle="on"
+                   ng-click="enableTab_List2()"
+                   active-class="active">List2
+                </a>
 
-                <!--<li><a href="#/indexedDb/#Tab3" toggle="on" parent-active-class="active">Tab 3</a></li>-->
-            </ul>
+            </div>
+
+            <!--<ul class="nav nav-tabs">-->
+                <!--<li ng-class="{active: tab == 1}">-->
+                    <!--<a ng-click="enableTab_Actions()">Actions</a>-->
+                <!--</li>-->
+
+                <!--<li ng-class="{active: tab == 2}">-->
+                    <!--<a ng-click="enableTab_List()">List</a>-->
+                <!--</li>-->
+
+                <!--<li ng-class="{active: tab == 3}">-->
+                    <!--<a ng-click="enableTab_Edit()">Edit</a>-->
+                <!--</li>-->
+
+                <!--<li ng-class="{active: tab == 4}">-->
+                    <!--<a ng-click="enableTab_Perf()">Perf</a>-->
+                <!--</li>-->
+
+                <!--<li ng-class="{active: tab == 5}">-->
+                    <!--<a ng-click="enableTab_Image()">Image</a>-->
+                <!--</li>-->
+
+                <!--<li ng-class="{active: tab == 6}">-->
+                    <!--<a ng-click="enableTab_List2()">List2</a>-->
+                <!--</li>-->
+                <!--&lt;!&ndash;<li ng-class="{active: tab == 1}"><a ng-click="enableTab_Actions()">Actions</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li ng-class="{active: tab == 2}"><a ng-click="tab = 2">List</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li ng-class="{active: tab == 3}"><a ng-click="tab = 3">Edit</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li ng-class="{active: tab == 4}"><a ng-click="tab = 4">Perf</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li ng-class="{active: tab == 5}"><a ng-click="tab = 5">Image</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li ng-class="{active: tab == 6}"><a ng-click="tab = 6">List2</a></li>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<li><a href="#/indexedDb/#Tab3" toggle="on" parent-active-class="active">Tab 3</a></li>&ndash;&gt;-->
+            <!--</ul>-->
 
             <div class="tab-content">
 
@@ -53,7 +98,7 @@
                      toggleable
                      ng-class="{active: tab == 1}"
                      default="active"
-                     id="Tab1"
+                     id="localStorage_actions"
                      exclusion-group="myTabs">
 
                     <div ng-include src='"localStorage_actions.html"'></div>
@@ -63,7 +108,7 @@
                 <div class="tab-pane"
                      toggleable
                      ng-class="{active: tab == 2}"
-                     id="Tab2"
+                     id="localStorage_list"
                      exclusion-group="myTabs">
 
                     <div ng-include src='"localStorage_list.html"'></div>
@@ -73,7 +118,7 @@
                 <div class="tab-pane"
                      toggleable
                      ng-class="{active: tab == 3}"
-                     id="Tab3"
+                     id="localStorage_edit"
                      exclusion-group="myTabs">
 
                     <div ng-include src='"localStorage_edit.html"'></div>
@@ -83,7 +128,7 @@
                 <div class="tab-pane"
                      toggleable
                      ng-class="{active: tab == 4}"
-                     id="Tab4"
+                     id="localStorage_perf"
                      exclusion-group="myTabs">
 
                     <div ng-include src='"localStorage_perf.html"'></div>
@@ -94,7 +139,7 @@
                 <div class="tab-pane"
                      toggleable
                      ng-class="{active: tab == 5}"
-                     id="Tab5"
+                     id="localStorage_image"
                      exclusion-group="myTabs">
 
                     <div ng-include src='"localStorage_image.html"'></div>
@@ -104,7 +149,7 @@
                 <div class="tab-pane"
                      toggleable
                      ng-class="{active: tab == 6}"
-                     id="Tab6"
+                     id="localStorage_list2"
                      exclusion-group="myTabs">
 
                     <div ng-include src='"localStorage_list2.html"'></div>

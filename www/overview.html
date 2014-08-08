@@ -11,4 +11,21 @@
     </div>
 
 
+    <h3>What does your browser support?</h3>
+    <div class="list-group">
+        <div ng-repeat="t in techniques">
+            <li class="list-group-item" ng-class="{'list-group-item-success': t.support}">
+                {{ t.name }}
+            </li>
+        </div>
+
+        <!--<li ng-show="Modernizr.localstorage" class="list-group-item list-group-item-success">-->
+            <!--LocalStorage-->
+        <!--</li>-->
+        <!--<li ng-show="!Modernizr.localstorage" class="list-group-item list-group-item-danger">-->
+            <!--LocalStorage-->
+        <!--</li>-->
+    </div>
+
+
 </div>

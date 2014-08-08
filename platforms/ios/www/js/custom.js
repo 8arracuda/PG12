@@ -7,6 +7,10 @@ lsTest = '1';
 sdApp.config(function ($routeProvider) {
 
     $routeProvider.
+        when('/overview', {
+            templateUrl: 'overview.html',
+            controller: 'OverviewCtrl'
+        }).
         when('/localStorage', {
             templateUrl: 'localStorage.html',
             controller: 'LocalStorageCtrl'
@@ -37,7 +41,7 @@ sdApp.config(function ($routeProvider) {
         }).
 
         otherwise({
-            redirectTo: '/localStorage'
+            redirectTo: '/overview'
         });
 
 
