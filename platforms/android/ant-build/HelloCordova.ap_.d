@@ -40,6 +40,13 @@
 /users/michael/AB-Code/PG12/platforms/android/assets/www/indexedDB.html \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/js \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/localStorage.html \
+/users/michael/AB-Code/PG12/platforms/android/assets/www/localStorage_actions.html \
+/users/michael/AB-Code/PG12/platforms/android/assets/www/localStorage_edit.html \
+/users/michael/AB-Code/PG12/platforms/android/assets/www/localStorage_image.html \
+/users/michael/AB-Code/PG12/platforms/android/assets/www/localStorage_list.html \
+/users/michael/AB-Code/PG12/platforms/android/assets/www/localStorage_list2.html \
+/users/michael/AB-Code/PG12/platforms/android/assets/www/localStorage_list2_details.html \
+/users/michael/AB-Code/PG12/platforms/android/assets/www/localStorage_perf.html \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/PG_more.html \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/PG_SQLite.html \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/sessionStorage.html \
@@ -66,6 +73,7 @@
 /users/michael/AB-Code/PG12/platforms/android/assets/www/js/angularJS_1.2.18/angular.min.js.map \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/js/controller/IndexedDBCtrl.js \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/js/controller/LocalStorageCtrl.js \
+/users/michael/AB-Code/PG12/platforms/android/assets/www/js/controller/LocalStorageList2DetailCtrl.js \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/js/controller/PGmoreCtrl.js \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/js/controller/PGSQLiteCtrl.js \
 /users/michael/AB-Code/PG12/platforms/android/assets/www/js/controller/SessionStorageCtrl.js \

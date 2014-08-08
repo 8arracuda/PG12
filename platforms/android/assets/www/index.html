@@ -37,7 +37,6 @@
 </head>
 <body>
 
-<!--begin sidebar-->
 <div class="sidebar sidebar-left" toggleable parent-active-class="sidebar-left-in" id="mainSidebar">
     <h1 class="app-name">Storage Demonstrator</h1>
 
@@ -59,10 +58,8 @@
         </div>
     </div>
 </div>
-<!--end sidebar-->
 
 <div class="app">
-
     <div class="navbar navbar-app navbar-absolute-top">
 
         <div class="navbar-brand navbar-brand-center" yield-to="title">
@@ -77,17 +74,16 @@
 
         <div class="btn-group pull-right" yield-to="navbarAction">
             <div class="btn btn-navbar">
-                <i class="fa fa-plus"></i> New
+                <i class="fa fa-plus"></i> New2
             </div>
         </div>
     </div>
 
     <div class="app-body">
-        <ng-view class="app-content"></ng-view>
+        <div ng-view class="app-content"></div>
     </div>
 
 </div>
-
 
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
@@ -101,10 +97,10 @@
 <script type="text/javascript" src="js/controller/IndexedDBCtrl.js"></script>
 <script type="text/javascript" src="js/controller/WebSqlCtrl.js"></script>
 <script type="text/javascript" src="js/controller/LocalStorageCtrl.js"></script>
+<script type="text/javascript" src="js/controller/LocalStorageList2DetailCtrl.js"></script>
 <script type="text/javascript" src="js/controller/SessionStorageCtrl.js"></script>
 <script type="text/javascript" src="js/controller/PGmoreCtrl.js"></script>
 <script type="text/javascript" src="js/controller/PGSQLiteCtrl.js"></script>
-
 
 
 <script type="text/javascript">

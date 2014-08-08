@@ -1,4 +1,4 @@
-app.initialize();
+//app.initialize();
 
 var sdApp = angular.module('sdApp', ["ngRoute", "mobile-angular-ui"]);
 
@@ -10,6 +10,10 @@ sdApp.config(function ($routeProvider) {
         when('/localStorage/', {
             templateUrl: 'localStorage.html',
             controller: 'LocalStorageCtrl'
+        }).
+        when('/localStorage/list2/:key', {
+            templateUrl: 'localStorage_list2_details.html',
+            controller: 'LocalStorageList2DetailsCtrl'
         }).
         when('/sessionStorage/', {
             templateUrl: 'sessionStorage.html',
@@ -31,6 +35,7 @@ sdApp.config(function ($routeProvider) {
             templateUrl: 'PG_more.html',
             controller: 'PGMoreCtrl'
         }).
+
         otherwise({
             redirectTo: '/localStorage'
         });

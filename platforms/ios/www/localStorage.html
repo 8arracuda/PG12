@@ -1,12 +1,12 @@
 <div ng-controller="LocalStorageCtrl">
 
     <div content-for="title">
-        <span>LocalStorage</span>
+        <span>{{ stringForTitle }}</span>
     </div>
 
     <div content-for="navbarAction">
         <div class="btn btn-navbar">
-            <i class="fa fa-plus"></i>LS
+            <i class="fa fa-plus"></i>{{ stringForRightButton }}
         </div>
     </div>
 
@@ -14,12 +14,35 @@
         <div class="scrollable-content">
 
             <ul class="nav nav-tabs">
-                <li ng-class="{active: tab == 1}"><a ng-click="tab = 1">Actions</a></li>
-                <li ng-class="{active: tab == 2}"><a ng-click="tab = 2">List</a></li>
-                <li ng-class="{active: tab == 3}"><a ng-click="tab = 3">Edit</a></li>
-                <li ng-class="{active: tab == 4}"><a ng-click="tab = 4">Perf</a></li>
-                <li ng-class="{active: tab == 5}"><a ng-click="tab = 5">Image</a></li>
-                <li ng-class="{active: tab == 6}"><a ng-click="tab = 6">List2</a></li>
+                <li ng-class="{active: tab == 1}">
+                    <a ng-click="enableTab_Actions()">Actions</a>
+                </li>
+
+                <li ng-class="{active: tab == 2}">
+                    <a ng-click="enableTab_List()">List</a>
+                </li>
+
+                <li ng-class="{active: tab == 3}">
+                    <a ng-click="enableTab_Edit()">Edit</a>
+                </li>
+
+                <li ng-class="{active: tab == 4}">
+                    <a ng-click="enableTab_Perf()">Perf</a>
+                </li>
+
+                <li ng-class="{active: tab == 5}">
+                    <a ng-click="enableTab_Image()">Image</a>
+                </li>
+
+                <li ng-class="{active: tab == 6}">
+                    <a ng-click="enableTab_List2()">List2</a>
+                </li>
+                <!--<li ng-class="{active: tab == 1}"><a ng-click="enableTab_Actions()">Actions</a></li>-->
+                <!--<li ng-class="{active: tab == 2}"><a ng-click="tab = 2">List</a></li>-->
+                <!--<li ng-class="{active: tab == 3}"><a ng-click="tab = 3">Edit</a></li>-->
+                <!--<li ng-class="{active: tab == 4}"><a ng-click="tab = 4">Perf</a></li>-->
+                <!--<li ng-class="{active: tab == 5}"><a ng-click="tab = 5">Image</a></li>-->
+                <!--<li ng-class="{active: tab == 6}"><a ng-click="tab = 6">List2</a></li>-->
 
                 <!--<li><a href="#/indexedDb/#Tab3" toggle="on" parent-active-class="active">Tab 3</a></li>-->
             </ul>
